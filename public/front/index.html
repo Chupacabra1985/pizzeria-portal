@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pizzeria</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,300i,700%7COswald:300,500,700&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="logo">
+        <h1 class="logo__title"><span>Mamma</span>Mia!</h1>
+        <h2 class="logo__subtitle">the best homemade Italian food</h2>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="container">
+  <div class="image-index-left">
+    <a href="/products.html#/order">
+    <div class="popup-index">
+    <h1 class="color-light">ORDER ONLINE</h1>
+    <p class="color-light">Delicious food delivery to your door</p>
+    </div>
+    </a>
+  </div>
+  <div class="image-index-right">
+    <a href="/products.html#/booking">
+    <div class="popup-index">
+      <h1 class="color-light">BOOK A TABLE</h1>
+      <p class="color-light">Book best table</p>
+    </div>
+    </a>
+  </div>
+  <div class="hours-popup">
+    <h1 class="color-light text-center">OPENING HOURS:</h1>
+    <p class="color-light text-center">TUE-SUN, 12PM-12AM</p>
+  </div>
+</section>
+
+<section class="container">
+  <div class="slider-style">
+    <img src="images/main/pizza-3.jpg" class="slide-image" alt="pizza">
+    <ul id="slides">
+      <li class="slide showing">
+        <p>AMAZING SERVICE!</p>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        <p class="signature">-Margaret Osborne</p>
+      </li>
+      <li class="slide">
+        <p>SUPER TASTE!</p>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+        <p class="signature">-John Norton</p>
+      </li>
+      <li class="slide">
+        <p>GREAT PLACE!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+        <p class="signature">-Susan Trump</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="container">
+  <div class="gallery">
+    <div class="image-gallery first">
+      <div class="like-subscribe">
+        <p style="color: white; font-size: 32px"><i class="fas fa-heart"></i> <i class="fas fa-share-alt"></i></p>
+      </div>
+    </div>
+    <div class="image-gallery second">
+      <div class="like-subscribe">
+        <p style="color: white; font-size: 32px"><i class="fas fa-heart"></i> <i class="fas fa-share-alt"></i></p>
+      </div>
+    </div>
+    <div class="image-gallery third">
+      <div class="like-subscribe">
+        <p style="color: white; font-size: 32px"><i class="fas fa-heart"></i> <i class="fas fa-share-alt"></i></p>
+      </div>
+    </div>
+    <div class="image-gallery fourth">
+      <div class="like-subscribe">
+        <p style="color: white; font-size: 32px"><i class="fas fa-heart"></i> <i class="fas fa-share-alt"></i></p>
+      </div>
+    </div>
+    <div class="image-gallery five">
+      <div class="like-subscribe">
+        <p style="color: white; font-size: 32px"><i class="fas fa-heart"></i> <i class="fas fa-share-alt"></i></p>
+      </div>
+    </div>
+    <div class="image-gallery six">
+      <div class="like-subscribe">
+        <p style="color: white; font-size: 32px"><i class="fas fa-heart"></i> <i class="fas fa-share-alt"></i></p>
+      </div>
+    </div>
+    <a href="" class="link">View more on Instagram</a>
+  </div>
+</section>
+<script>
+  const slides = document.querySelectorAll('#slides .slide');
+  let currentSlide = 0;
+  setInterval(nextSlide,3000);
+
+  function nextSlide() {
+    slides[currentSlide].className = 'slide';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+  }
+</script>
+<script src="js/app.js" type="module"></script>
+</body>
+</html>
