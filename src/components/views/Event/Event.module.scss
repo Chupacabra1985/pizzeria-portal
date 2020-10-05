@@ -3,3 +3,32 @@
 .component {
   padding: $base-size;
 }
+
+.paper {
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+}
+
+.formControl {
+  margin: 5px;
+  width: 100%;
+}
+
+.select {
+  margin: 10px 10px;
+}
+
+.text {
+  margin: 10px 0px;
+  width: 100%;
+}
+
+.buttonSave {
+  background-color: red;
+  margin: 5px;
+}
+
+.buttonCancel {
+  background-color: green;
+  margin: 5px;
+}
